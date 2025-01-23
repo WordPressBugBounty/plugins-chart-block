@@ -3,7 +3,7 @@ Contributors: bplugins, abuhayat, charlescormier
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, chart, charts, chart block, Gutenberg block
 Requires at least: 6.2+
-Tested up to: 6.6.2
+Tested up to: 6.7.1
 Stable tag: 1.1.6
 Requires PHP: 7.1
 License: GPLv3 or later
@@ -150,48 +150,4 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 * Fix border size when hovering
 
 = 1.0.0 =
-* Initial Release
-
-
-== Upgrade Notice ==
-
-= 1.1.6 =
-* Fix Border Issue
-
-= 1.1.5 =
-* Performance Improvement
-
-= 1.1.4 =
-* Add translate feature
-
-= 1.1.3 =
-* Reduce PHP Code
-* Performance Improvement
-
-= 1.1.2 =
-* Add option for height
-
-= 1.1.1 =
-* Reduce PHP Code
-
-= 1.1.0 =
-* Add option for show hide X or Y scales
-
-= 1.0.5 =
-* Add option for showing hide grid lines
-
-= 1.0.4 =
-* Add the download option for the chart
-
-= 1.0.3 =
-* Performance upgrade
-
-= 1.0.2 =
-* Update theme and Colors
-
-= 1.0.1 =
-* Add an option to change the point size
-* Fix border size when hovering
-
-= 1.0.0 =
-* Initial Release
+* Initial Release.
