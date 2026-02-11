@@ -3,7 +3,7 @@ Contributors: bplugins, abuhayat, charlescormier
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, chart, charts, chart block, Gutenberg block
 Requires at least: 6.2+
-Tested up to: 6.8
+Tested up to: 6.9
 Stable tag: 1.1.6
 Requires PHP: 7.1
 License: GPLv3 or later
@@ -143,10 +143,10 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 * Performance upgrade
 
 = 1.0.2 =
-* Update theme and Colors
+* Update theme and Colors.
 
 = 1.0.1 =
-* Add an option to change the point size
+* Add an option to change the point size.
 * Fix border size when hovering.
 
 = 1.0.0 =
