@@ -112,7 +112,7 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 == Changelog ==
 
 = 1.1.6 =
-* Fix Border Issue
+* **Fix:** Border Issue
 
 = 1.1.5 =
 * Performance Improvement
@@ -140,7 +140,7 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 * Add the download option for the chart
 
 = 1.0.3 =
-* Performance upgrade
+* Performance upgrade.
 
 = 1.0.2 =
 * Update theme and Colors.
