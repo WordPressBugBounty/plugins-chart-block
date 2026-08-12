@@ -39,6 +39,7 @@ if ( ! class_exists( 'ChartBlock_Admin_Menu' ) ) {
             'isPremium' => false,
             'hasPro' => false,
             'adminUrl' => admin_url(), 
+            'pluginUrl' => CHART_BLOCK_DIR_URL,
             'deleteDataOnUninstall' => ChartBlock_Options::chart_block_get_options()['delete_data_on_uninstall'],
             'uninstallNonce' => wp_create_nonce('chart_block_uninstall_nonce')
 				] ) ); ?>'
@@ -51,7 +52,19 @@ if ( ! class_exists( 'ChartBlock_Admin_Menu' ) ) {
 		public function chart_block_enqueue_admin_scripts( $screen ) {
 			if ( $screen === 'chart_block_page_block-dashboard' ) {
 				wp_enqueue_style( 'chart-block-admin-dashboard-style', CHART_BLOCK_DIR_URL . 'build/admin/dashboard.css', [], CHART_BLOCK_VERSION );
-				wp_enqueue_script( 'chart-block-admin-dashboard-script', CHART_BLOCK_DIR_URL . 'build/admin/dashboard.js', [ 'wp-element', 'wp-i18n', 'wp-components', 'wp-util' ], CHART_BLOCK_VERSION, true );
+
+				// Take the dependency list from the generated asset file so every
+				// package the bundle actually imports is present. `wp-core-data`
+				// is added explicitly: the Welcome card reads the site and the
+				// current user from the `core` store, which nothing else pulls in.
+				$asset = require CHART_BLOCK_DIR_PATH . 'build/admin/dashboard.asset.php';
+				wp_enqueue_script(
+					'chart-block-admin-dashboard-script',
+					CHART_BLOCK_DIR_URL . 'build/admin/dashboard.js',
+					array_merge( $asset['dependencies'], [ 'wp-core-data', 'wp-util' ] ),
+					$asset['version'],
+					true
+				);
 			}
 		}
 	} 

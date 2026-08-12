@@ -1,11 +1,11 @@
-=== Chart Block ===
-Contributors: bplugins, abuhayat, charlescormier, tomorbplugins
+=== Chart Block - Visualize Data with Bar, Line, Pie Charts ===
+Contributors: bplugins, abuhayat, shihabshamim
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, chart, charts, chart block, Gutenberg block
 Requires at least: 6.5+
-Tested up to: 6.9
-Stable tag: 1.1.7
-Requires PHP: 7.1
+Tested up to: 7.0
+Stable tag: 1.1.8
+Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -200,7 +200,12 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Changelog ==
 
-= 1.1.7 =
+
+
+= 1.1.8 – 12 August 2026 =
+* Improved the admin dashboard UI.
+
+= 1.1.7 – 18 May 2026 =
 * Added New 9 Premium Chart block styles
 * Added ShortCode
 * Added Admin Dashboard
@@ -249,5 +254,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Upgrade Notice ==
 
-= 1.1.7 =
+= 1.1.8 – 17 June 2026 =
+This version includes improved admin dashboard UI. Please update for the best experience.
+
+
+= 1.1.7 – 18 May 2026 =
 This version includes new premium styles, admin dashboard improvements, and shortcode support. Please update for the best experience.

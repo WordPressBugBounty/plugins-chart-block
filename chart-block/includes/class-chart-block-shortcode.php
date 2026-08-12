@@ -28,8 +28,9 @@ if (!class_exists('ChartBlock_ShortCode')) {
     public function chart_block_adminEnqueueScripts( $hook ){
       // global $pagenow;
       if( 'edit.php' === $hook || 'post.php' === $hook ){
-        wp_enqueue_style( 'chart-block-admin-post', CHART_BLOCK_DIR_URL . 'build/admin-post.css', [], CHART_BLOCK_VERSION );
-        wp_enqueue_script( 'chart-block-admin-post', CHART_BLOCK_DIR_URL . 'build/admin-post.js', [], CHART_BLOCK_VERSION, true );
+        $version = ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ? time() : CHART_BLOCK_VERSION;
+        wp_enqueue_style( 'chart-block-admin-post', CHART_BLOCK_DIR_URL . 'build/admin-post.css', [], $version );
+        wp_enqueue_script( 'chart-block-admin-post', CHART_BLOCK_DIR_URL . 'build/admin-post.js', [], $version, true );
         wp_set_script_translations( 'chart-block-admin-post', 'chart-block', CHART_BLOCK_DIR_PATH . 'languages' );
       }
 	  }
