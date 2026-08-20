@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, chart, charts, chart block, Gutenberg block
 Requires at least: 6.5+
 Tested up to: 7.0
-Stable tag: 1.1.8
+Stable tag: 1.1.9
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -200,7 +200,8 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Changelog ==
 
-
+= 1.1.9 – 20 August 2026 =
+* Fix the JavaScript conflict.
 
 = 1.1.8 – 12 August 2026 =
 * Improved the admin dashboard UI.

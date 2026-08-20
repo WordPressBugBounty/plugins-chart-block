@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Chart Block
  * Description: Represent your data by symbols, such as bars, lines, or pie charts.
- * Version: 1.1.8
+ * Version: 1.1.9
  * Requires at least: 6.5
  * Tested up to: 7.0
  * Requires PHP: 7.4
@@ -24,7 +24,7 @@ if ( function_exists( 'chart_block_fs' ) ) {
 else {
     // Constant
     // নতুন কনস্ট্যান্ট (New Prefix)
-    define( 'CHART_BLOCK_VERSION',  ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ? time() : '1.1.8' ); 
+    define( 'CHART_BLOCK_VERSION',  ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ? time() : '1.1.9' ); 
     define( 'CHART_BLOCK_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'CHART_BLOCK_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
