@@ -3,8 +3,8 @@ Contributors: bplugins, abuhayat, shihabshamim
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, chart, charts, chart block, Gutenberg block
 Requires at least: 6.5+
-Tested up to: 7.0
-Stable tag: 1.1.9
+Tested up to: 7.1
+Stable tag: 1.2.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -48,10 +48,9 @@ This plugin can represent tabular numeric data, functions or some kinds of quali
 * **Animation Controls:** Full control over chart animations and speed.
 * **Advanced Typography:** Custom Google Fonts and multi-device sizing.
 * **Customization:** Currency Symbols and Advanced Data Editor.
+* **Live Data Connecting** (Google Sheets & WooCommerce Orders)
+* **Different Types:** Chart block comes with different types, you can easily switch the type of chart.
 
-= Features =
-- **Fully Customizable**: All the options you need to arrange the showcase to your liking are available here.
-- **Different Types**: Chart block comes with different types, you can easily switch the type of chart.
 
 
 = How to use =
@@ -199,6 +198,11 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+
+
+= 1.2.0 – 09 September 2026 =
+* Live Data Connecting (Google Sheets & WooCommerce Orders)
 
 = 1.1.9 – 20 August 2026 =
 * Fix the JavaScript conflict.
