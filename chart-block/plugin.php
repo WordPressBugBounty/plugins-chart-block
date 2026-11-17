@@ -2,9 +2,9 @@
 /**
  * Plugin Name: Chart Block
  * Description: Represent your data by symbols, such as bars, lines, or pie charts.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Requires at least: 6.5
- * Tested up to: 7.0
+ * Tested up to: 7.1
  * Requires PHP: 7.4
  * Author: bPlugins
  * Author URI: https://bplugins.com
@@ -24,7 +24,7 @@ if ( function_exists( 'chart_block_fs' ) ) {
 else {
     // Constant
     // নতুন কনস্ট্যান্ট (New Prefix)
-    define( 'CHART_BLOCK_VERSION',  ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ? time() : '1.2.0' ); 
+    define( 'CHART_BLOCK_VERSION',  ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ? time() : '1.2.1' ); 
     define( 'CHART_BLOCK_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'CHART_BLOCK_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
@@ -78,6 +78,29 @@ else {
     }
     // ... Your plugin's main file logic ...
     require_once BCHART_DIR_PATH . 'includes/class-chart-block-dependencies.php';
+    require_once BCHART_DIR_PATH . 'includes/class-chart-block-promo-banner.php';
     new ChartBlock_Dependencies();
+        function cbpluginActionLinks( $links, $file ) {
+    if ( plugin_basename( __FILE__ ) === $file ) {
+        $goProLink = 'https://bplugins.com/products/chart-block/pricing/?utm_source=admin&utm_medium=plugins&utm_campaign=bfcm2026';
+
+        $linkText = ( current_time( 'Y-m-d' ) > '2026-12-05' )
+            ? __( 'Upgrade to Pro', 'chart-block' )
+            : __( 'Upgrade to Pro & Save Up to 45% This Black Friday!', 'chart-block' );
+
+        $links['help-and-demos'] = sprintf(
+            '<a href="%s" target="_blank" rel="noopener noreferrer" style="%s">%s</a>',
+            esc_url( $goProLink ),
+            'color:#d63638;font-weight:bold;',
+            $linkText
+        );
+    }
+
+    return $links;
+}
+
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'cbpluginActionLinks', 10, 2 );
+
+
 }
 
